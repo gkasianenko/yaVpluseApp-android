@@ -1,0 +1,44 @@
+.cashback {
+  & .button {
+    margin-bottom: 16px;
+  }
+}
+
+.cashback__current-content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 12px 14px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 0px 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.cashback__current-content > * + * {
+  margin-top: 8px;
+}
+
+.cashback__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  p:nth-child(1) {
+    width: 177px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  p:nth-child(2) {
+    color: $secondaryColor;
+    font-weight: 500;
+  }
+}
+
+.cashback__bottom {
+  font-size: 10px;
+  letter-spacing: 0.004em;
+  color: #acb1bf;
+}

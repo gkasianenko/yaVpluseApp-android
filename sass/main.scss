@@ -4,7 +4,13 @@
 @import "./base/mixins";
 
 //Blocks
+@import "./blocks/buttons";
+@import "./blocks/cashback-bar";
+@import "./blocks/headers";
 
 //Sections
 @import "./sections/header";
-@import "./sections/footer";
+@import "./sections/footer-nav";
+@import "./sections/casnback";
+@import "./sections/about-app";
+@import "./sections/faq";

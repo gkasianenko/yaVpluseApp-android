@@ -28,6 +28,11 @@
   border-radius: 18px;
 }
 
+.header__balance-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__balance-content {
   padding: 18px 14px;
 }
@@ -36,6 +41,39 @@
   margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
+}
+
+.header__balance-left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.header__balance-left > * + * {
+  margin-top: 22px;
+}
+
+.header__account {
+  p:nth-child(1) {
+    font-size: 12px;
+  }
+  p:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+.header__balance-right {
+  margin-right: 43px;
+
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  color: #acb1bf;
+}
+
+.header__balance-right > * + * {
+  margin-top: 17px;
 }
 
 .header__overall-balance {
@@ -58,5 +96,25 @@
 .header__user-wrapper {
   svg {
     cursor: pointer;
+  }
+}
+
+.header__income-kts > * + *,
+.header__income-percentage > * + *,
+.header__account > * + * {
+  margin-top: 8px;
+}
+
+.header__kts-value,
+.header__percentage-value {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 16px;
+  }
+
+  & > * + * {
+    margin-left: 6px;
   }
 }
